@@ -1,0 +1,2556 @@
+
+<!DOCTYPE html>
+<html lang="es" class="pc">
+
+<head>
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4QRXBKG5JN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-4QRXBKG5JN');
+    </script>
+
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Productos, servicios y promociones diseñados para atender las necesidades de personas y empresas de los distintos sectores productivos del país.">
+    <meta name="keywords" content="banco, banco nación argentina, banca, banca nacional">
+    <meta name="author" content="Banco de la Nación Argentina">
+
+    <title>Banco de la Nación Argentina</title>
+
+    
+
+    
+    <link href="/Content/bootstrap.min.css" rel="stylesheet">
+    <link href="/Content/bootstrap-theme.min.css" rel="stylesheet">
+
+    
+
+    
+
+    
+
+    
+    
+    <link href="/Content/css/jquery.bxslider.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/css/datepicker.css" rel="stylesheet" type="text/css" />
+
+
+    
+    <link href="/Content/css/style.css" rel="stylesheet">
+    <style>
+        .element-invisible {
+            position: absolute !important;
+            clip: rect(1px, 1px, 1px, 1px);
+            overflow: hidden;
+            height: 1px;
+        }
+    </style>
+
+
+    
+
+    <script src="/bundles/jquery?v=KVwTEjS-NVeUtl4hOvP7lNlsGD7rWshJQoQzaFpIgLQ1"></script>
+
+
+    
+    <script src="/Scripts/bootstrap.min.js"></script>
+
+    
+    
+
+    
+    
+
+
+    <script>
+		var arrayPlaceholderExceptions = ["CUIL", "DNI", "CUIT", "CUIL/CUIT", "CBU"];
+	
+	    $(document).ready(function () {
+            var requiredFields = $("input[required][type!=hidden][type!=radio][type!=checkbox],select[required],input[type!=hidden][type!=radio][type!=checkbox][data-val-required][data-val-required!='']");
+            $.each(requiredFields, function (i, item) {
+                if (!$(item).is(":disabled")) {
+                    if ($(item).attr("readonly") != "readonly") {
+                        var placeholder = $(item).attr("placeholder");
+                        if (placeholder != undefined) {
+							if($.inArray(placeholder.toUpperCase(), arrayPlaceholderExceptions) < 0 ){
+								placeholder = placeholder.toLowerCase();
+							}
+                            $(item).closest("div").append($("<small style='display:grid'>* Campo " + placeholder + " obligatorio</small>"));
+                        }
+                        else {
+                            $(item).closest("div").append($("<small style='display:grid'>* Campo obligatorio</small>"));
+                        }
+                    }
+                }
+            });
+        });
+
+        $(document).on('submit', 'form', function () {
+
+            $("body").css('position', 'relative');
+            $("body").append("<div class='cargando'><img src='/Images/cargando02.gif' /></div>");
+            if ($(this).attr('id') == 'requestFormReclamosUnique') {
+
+                $('#btn_request_submit').remove();
+            } else {
+                setTimeout(clear, 5000);
+            }
+
+
+
+
+        });
+
+        function clear() {
+            $("body").removeAttr('position');
+            $(".cargando").remove();
+
+        }
+    </script>
+
+    
+
+    <script type="text/javascript" src="/Scripts/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="/Scripts/DevelopScripts/site.js"></script>
+    <script type="text/javascript" src="/Scripts/DevelopScripts/chatbot/iframe.js"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            seleccionarHome();
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+
+            $('.bxslider').bxSlider({
+                pagerCustom: '#bx-pager',
+                auto: true,
+                autoControls: true,
+                mode: 'fade',
+                captions: true,
+                touchEnabled: true,
+                speed: 800,
+                pause: 10000,
+                autoHover: true
+            });
+
+
+
+
+            $('.slider01').bxSlider({
+                mode: 'fade',
+                auto: false,
+                autoControls: true,
+                autoHover: true,
+            });
+
+
+            $('.slider02').bxSlider({
+                mode: 'fade',
+                auto: false,
+                autoControls: true,
+                autoHover: true,
+            });
+
+
+            $('.slider03').bxSlider({
+                mode: 'fade',
+                auto: false,
+                autoControls: true,
+                autoHover: true,
+            });
+
+
+            $('.slider04').bxSlider({
+                mode: 'fade',
+                auto: false,
+                autoControls: true,
+                autoHover: true,
+            });
+
+
+            $('.slider05').bxSlider({
+                mode: 'fade',
+                auto: false,
+                autoControls: true,
+                autoHover: true,
+            });
+
+        });
+
+
+    </script>
+    
+
+
+
+
+
+
+
+
+    
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/Images/ico/apple-touch-icon-144.png">
+    <link rel="shortcut icon" href="/Images/ico/favicon.ico" type="/Images/x-icon">
+    <link rel="icon" href="/Images/ico/favicon.ico" type="image/x-icon">
+
+
+</head>
+
+<body>
+
+    
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-5JX6QM"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5JX6QM');</script>
+    
+
+
+    <div id="skip-link">
+        <a href="#main-content" class="element-invisible">Pasar al contenido principal</a>
+    </div>
+
+    
+<header>
+
+    
+        <a style="text-indent:-1000em; position:absolute; left:-10000px; top:-1000px;" href="/Institucional/Sucursales">Buscador de Sucursales y cajeros (con opción no videntes)</a>
+    <style>
+        .dropdown-menu li a {
+            color: white;
+            display: block;
+            padding: 1px 10px;
+            font-size:13px;
+            clear: both;
+            font-weight: normal;
+            line-height: 1.42857143;
+            color: #fff;
+            color: rgba(255, 255, 255, 0.8);
+            white-space: nowrap;
+        }
+        .dropdown-menu .sub-menu-col > li {
+            margin: 0 0;
+        }
+
+        .dropdown-menu .sub-menu-col > .title {
+            margin: 5px 0;
+        }
+
+        #personasLI a.dropdown-toggle, #empresasLI a.dropdown-toggle, #institucionalLI a.dropdown-toggle{
+            color: #fff;
+        }
+
+        .dropdown-menu li.title {
+            padding: 3px 0px 3px 10px;
+            font-size: 15px;
+        }
+
+
+        .navbar-default .navbar-nav > .active > a,
+        .navbar-default .navbar-nav > .active > a:hover,
+        .navbar-default .navbar-nav > .active > a:focus {
+            color: #fff;
+            background-color: #00586D;
+        }
+    </style>
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="containerMenu">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">
+                        <img src="/Images/Logo___BNA.svg" alt="Logo del Banco Nación" title="Logo del Banco Nación"/>
+                    </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown" id="personasLI">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Personas</a>
+                                    <ul class="dropdown-menu">
+                                        <div class="sub-menu-col">
+                                        <li class="title">CUENTAS</li>
+                                        <li><a href="/Personas/Paquetes">Paquetes</a></li>
+                                        <li><a href="/Personas/CajasDeAhorros">Cajas de Ahorros</a></li>
+                                        <li><a href="/Personas/CuentaCorriente">Cuenta Corriente</a></li>
+                                        <li><a href="/Personas/CuentaSueldo">Cuenta Sueldo</a></li>
+                                        <li><a href="/Personas/CasasParticulares">Casas Particulares</a></li>
+
+                                        <li class="title">TARJETAS</li>
+                                        <li><a href="/Personas/TarjetasDeCredito">Crédito</a></li>
+                                        <li><a href="/Personas/TarjetaDebito">Débito</a></li>
+                                        <li><a href="/Personas/TarjetasPrepagas">Prepagas</a></li>
+                                        <li><a href="/Personas/TarjetaBancat">Bancat</a></li>
+                                        <li><a href="/Personas/TarjetasSociales">Sociales</a></li>
+
+                                        <li class="title">SEGUROS</li>
+                                        <li><a href="/Personas/SegurosParaPersonas">Personas</a></li>
+                                        <li><a href="/Personas/SegurosPatrimoniales">Patrimoniales</a></li>
+                        </div>
+
+                        <div class="sub-menu-col">
+                            <li class="title">PRÉSTAMOS</li>
+                            <li><a href="/Personas/EnEfectivo">En Efectivo</a></li>
+                            <li><a href="/Personas/ParaDestinosEspecificos">Para Destinos Específicos</a></li>
+                            <li><a href="/Personas/PersonasJubiladasYPensionadas">Personas Jubiladas y Pensionadas</a></li>
+
+                            <li class="title">INVERSIONES</li>
+                            <li><a href="/Personas/PlazoFijo">Plazo Fijo</a></li>
+                            <li><a href="/Personas/FondosComunesDeInversion">Fondos Comunes de Inversión</a></li>
+                            <li><a href="/Personas/BonosYAcciones">Bonos y Acciones</a></li>
+                            <li><a href="/Personas/TestDelInversor">Test de Inversiones</a></li>
+
+                            <li class="title">BENEFICIOS</li>
+                            <li><a href="/Personas/DescuentosYPromociones">Descuentos y Promociones</a></li>
+                            <li><a href="/Personas/ProgramaDeBeneficios">Programa de Beneficios</a></li>
+                            <li><a href="/Personas/ProgramaAerolineasPlus">Programa de Aerolíneas Plus</a></li>
+
+                            <li class="title">EDUCACIÓN FINANCIERA</li>
+                            <li><a href="http://www.bna.com.ar/bnatesuma">BNA te suma</a></li>
+                            <li><a href="https://www.mayoresactivos.com.ar/?utm_source=bnacomar&utm_medium=menu" target="_blank"> Mayores Activos</a></li>
+                            <li><a href="https://www.youtube.com/playlist?list=PLIinff-hDEz049rTr-vfF92UlhiImgCck" target="_blank">Tutoriales</a></li>
+                        </div>
+                        <div class="sub-menu-col">
+                            <li class="title">CANALES ELECTRÓNICOS</li>
+                            <li><a href="/Personas/bnaMAS">App BNA+</a></li>
+                            <li><a href="/Personas/Cajeros">Cajeros automáticos</a></li>
+                            <li><a href="/Personas/HomeBanking">Home Banking</a></li>
+                            <li><a href="/Personas/PuntoEfectivo">Orden de extracción</a></li>
+
+                            <li class="title">TIENDA ONLINE</li>
+                            <li><a href="https://www.tiendabna.com.ar/" target="_blank">Tienda BNA+</a></li>
+
+                            <li class="title">OTROS SERVICIOS</li>
+                            <li><a href="/Personas/CajasDeSeguridad">Cajas de Seguridad</a></li>
+                            <li><a href="/Personas/PagoImpuestosYServicios">Pago Impuestos y Servicios</a></li>
+                            <li><a href="/Personas/OperacionesIntersucursales">Operaciones Intersucursales</a></li>
+                            <li><a href="/Personas/OperacionesConElExterior">Operaciones con el Exterior</a></li>
+
+                            <li class="title">ENLACES ESPECIALES</li>
+                            <li><a href="/Personas/ImpuestoPais">Impuesto PAIS</a></li>
+                            <li><a href="http://www.bna.com.ar/Home/CondicionesCreditosUva">Condiciones hipotecarios UVA</a></li>
+                        </div>
+                        </ul>
+                        </li>
+                        <li class="dropdown" id="empresasLI">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Empresas</a>
+                            <ul class="dropdown-menu">
+                                <div class="sub-menu-col">
+                                <li class="title">Microempresas</li>
+                                <li><a href="/Empresas/Novedades/Microempresa">Créditos para Microempresas</a></li>
+                                <li><a href="/Empresas/Novedades/CuentaComercio">Cuenta comercio</a></li>
+
+                                <li class="title">Pequeñas y <br>Medianas Empresas</li>
+                                <li><a href="/Empresas/Pymes/Cuentas">Cuentas</a></li>
+                                <li><a href="/Empresas/Pymes/Paquetes">Paquetes</a></li>
+                                <li><a href="/Empresas/Pymes/Tarjetas">Tarjetas</a></li>
+                                <li><a href="/Empresas/Pymes/Creditos">Créditos</a></li>
+                                <li><a href="/Empresas/Pymes/Inversiones">Inversiones</a></li>
+                                <li><a href="/Empresas/Pymes/Seguros">Seguros</a></li>
+                                <li><a href="/Empresas/Pymes/CanalesElectronicos">Canales Electrónicos</a></li>
+                                <li><a href="/Empresas/Pymes/ComercioExterior">Comercio Exterior</a></li>
+                                <li><a href="/Empresas/Pymes/GestionDeCobranzas">Gestión de Cobranzas</a></li>
+                                <li><a href="/Empresas/Pymes/GestionDePagos">Gestión de Pagos</a></li>
+                                <li><a href="/Empresas/Pymes/CajasDeSeguridad">Cajas de Seguridad</a></li>
+</div>
+
+                                <div class="sub-menu-col">
+                                    <li class="title">Grandes Empresas</li>
+                                    <li><a href="/Empresas/Grandes/Cuentas">Cuentas</a></li>
+                                    <li><a href="/Empresas/Grandes/Paquetes">Paquetes</a></li>
+                                    <li><a href="/Empresas/Grandes/Tarjetas">Tarjetas</a></li>
+                                    <li><a href="/Empresas/Grandes/Creditos">Créditos</a></li>
+                                    <li><a href="/Empresas/Grandes/Inversiones">Inversiones</a></li>
+                                    <li><a href="/Empresas/Grandes/Seguros">Seguros</a></li>
+                                    <li><a href="/Empresas/Grandes/CanalesElectronicos">Canales Electrónicos</a></li>
+                                    <li><a href="/Empresas/Grandes/ComercioExterior">Comercio Exterior</a></li>
+                                    <li><a href="/Empresas/Grandes/GestionDeCobranzas">Gestión de Cobranzas</a></li>
+                                    <li><a href="/Empresas/Grandes/GestionDePagos">Gestión de Pagos</a></li>
+                                    <li><a href="/Empresas/Grandes/CajasDeSeguridad">Cajas de Seguridad</a></li>
+                                </div>
+
+                                <div class="sub-menu-col">
+                                    <li class="title">AgroNegocios</li>
+                                    <li><a href="/Empresas/AgroNegocios/Cuentas">Cuentas</a></li>
+                                    <li><a href="/Empresas/AgroNegocios/Tarjetas">Tarjetas</a></li>
+                                    <li><a href="/Empresas/AgroNegocios/Creditos">Créditos</a></li>
+                                    <li><a href="/Empresas/AgroNegocios/Inversiones">Inversiones</a></li>
+                                    <li><a href="/Empresas/AgroNegocios/Seguros">Seguros</a></li>
+                                    <li><a href="/Empresas/AgroNegocios/CanalesElectronicos">Canales Electrónicos</a></li>
+                                    <li><a href="/Empresas/Pymes/ComercioExterior">Comercio Exterior</a></li>
+                                    <li><a href="/Empresas/AgroNegocios/CajasDeSeguridad">Cajas de Seguridad</a></li>
+
+
+                                    <li class="title">Novedades</li>
+                                    <li><a href="/Empresas/Novedades/Newsletter">Todo Pyme</a></li>
+                                    <li><a href="/Empresas/EventosYCapacitaciones">Eventos y capacitaciones</a></li>
+                                    <li><a href="/Empresas/Novedades/CentrosPyMENacion">Centros PyME Nación</a></li>
+                                </div>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown" id="institucionalLI">
+                            <a href="#" title="Institucional" class="dropdown-toggle" data-toggle="dropdown">Institucional</a>
+                            <ul class="dropdown-menu">
+                                <div class="sub-menu-col">
+                                    <li class="title">Nuestro Banco</li>
+                                    <li><a href="/Institucional/NuestraHistoria">Nuestra Historia</a></li>
+                                    <li><a href="/Downloads/DIRECTORIO2022.pdf" target="_blank">Autoridades</a></li>
+                                    <li><a href="/Institucional/PerfilDeLaEntidad">Perfil de la Entidad</a></li>
+                                    <li><a href="/Institucional/CartaOrganica">Carta Orgánica</a></li>
+                                    <li><a href="/Institucional/TrayectoriaInternacional">Trayectoria Internacional</a></li>
+                                    <li><a href="/Institucional/GrupoBancoNacion">Grupo Banco Nación</a></li>
+                                    <li><a href="/Institucional/Sucursales">Sucursales y Cajeros</a></li>
+                                    <li><a href="/Institucional/ElBancoEnCifras">El Banco en Cifras</a></li>
+                                    <li><a href="/Institucional/FundacionBNA">Fundación BNA</a></li>
+                                </div>
+
+                                <div class="sub-menu-col">
+                                    <li class="title">Información Pública</li>
+                                    <li><a href="https://prensa.bna.com.ar/Comunicado/index">Prensa</a></li>
+                                    <li><a href="/Institucional/AccesoALaInformacion">Acceso a la Información</a></li>
+                                    <li><a href="/Institucional/MemoriaYBalances">Memoria y Balances</a></li>
+                                    <li><a href="/Institucional/GobiernoCorporativo">Código Gobierno Corporativo</a></li>
+                                    <li><a href="/Institucional/CodigoDeEticaYConducta">Código de Ética y Conducta</a></li>
+                                    <li><a href="/Institucional/ComprasYContrataciones">Compras y Contrataciones</a></li>
+                                    <li><a href="/Institucional/InmueblesALaVenta">Inmuebles a la Venta</a></li>
+                                    <li><a href="/Institucional/PrevencionDeLavadoDeDinero">Prevención de Lavado de Dinero</a></li>
+                                    <li><a href="/Institucional/DisciplinaDeMercado">Disciplina de Mercado</a></li>
+                                    <li><a href="/Institucional/ResponsabilidadSocial">Responsabilidad Social</a></li>
+                                </div>
+
+                                <div class="sub-menu-col">
+                                    <li class="title">Acciones Institucionales</li>
+                                    <li><a href="/Institucional/BienesCulturales">Bienes Culturales</a></li>
+                                    <li><a href="/Institucional/BNADeporte">BNA y el Deporte</a></li>
+                                    <li class="title">Trabajá con nosotros</li>
+                                    <li><a href="/Institucional/IngresaTuCurriculum">Ingresá tu Currículum</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+
+                        <div class="content-Homebanking-Header">
+                            <a class="btn-Homebanking-Header Turnos" href="https://www.bna.com.ar/Home/AtencionEnSucursales">Solicitud de Turnos</a>
+                            <a class="btn-Homebanking-Header" href="https://hb.redlink.com.ar/bna/login.htm">Home Banking</a>
+                        </div>
+
+            </div><!-- /.container-fluid -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+
+
+
+
+
+    
+
+
+    <form id="searchForm" class="navbar-form navbar-left search" style="visibility: hidden" role="search" action="/Buscador" method="get">
+        <div class="form-group">
+            <input name="q" type="text" class="form-control" placeholder="Buscar">
+        </div>
+        <button type="submit" class="btn btn-default iconSearch">Submit</button>
+    </form>
+
+    <script>
+        
+        $(document).on('keydown', function (e) {
+            if (e.keyCode === 27) {
+                $(".dropdown-menu:visible").hide();
+            }
+        });
+        $(document).ready(function () {
+            if ('True' == 'True') {
+                $("#personasLI").removeClass("active");
+                $("#personasLI").addClass("active");
+
+                $("#institucionalLI a.dropdown-toggle").attr("href", '/Institucional');
+                $("#empresasLI a.dropdown-toggle").attr("href", "/Empresas");
+            } else {
+                if ('False' == 'True' || 'False' == 'True') {
+                    $("#empresasLI").removeClass("active");
+                    $("#empresasLI").addClass("active");
+
+                    $("#personasLI a.dropdown-toggle").attr("href", "/Personas");
+                    $("#institucionalLI a.dropdown-toggle").attr("href", "/Institucional");
+                } else {
+                    if ('False' == 'True') {
+                        $("#institucionalLI").removeClass("active");
+                        $("#institucionalLI").addClass("active");
+
+                        $("#personasLI a.dropdown-toggle").attr("href", "/Personas");
+                        $("#empresasLI a.dropdown-toggle").attr("href", "/Empresas");
+                    } else {
+                        $("#personasLI").removeClass("active");
+                        $("#personasLI").addClass("active");
+                    }
+                }
+            }
+
+            $("#personasLI, #empresasLI, #institucionalLI").click(function () {
+                if ($(this).find("a").attr("href") != undefined && $(this).find("a").attr("href") != "#") {
+                    window.location.href = $(this).find("a").attr("href");
+                }
+                else {
+                    if ($(this).find("ul").is(":visible")) {
+                        $(this).closest(".nav").find("ul").hide();
+                        $(this).closest(".nav").find("ul").css('opacity', 0);
+                        $(this).find("ul").css('visibility', 'hidden');
+                    }
+                    else {
+                        $(this).closest(".nav").find("ul").hide();
+                        $(this).closest(".nav").find("ul").css('opacity', 0);
+                        $(this).find("ul").css('visibility', 'hidden');
+
+                        $(this).find("ul").show();
+                        $(this).find("ul").css('opacity', 1);
+                        $(this).find("ul").css('visibility', 'revert');
+                    }
+                }
+            });
+
+            $(".dropdown-menu li a").focus(function () {
+                $(this).css("color", "#007894");
+                $(this).closest("li").css("background-color", "white");
+            });
+            $(".dropdown-menu li a").hover(function () {
+                $(this).css("color", "#007894");
+                $(this).closest("li").css("background-color", "white");
+            });
+
+            $(".dropdown-menu li a").mouseout(function () {
+                $(this).css("color", "white");
+                $(this).closest("li").css("background-color", "");
+            });
+
+            $(".dropdown-menu li a").blur(function () {
+                $(this).css("color", "white");
+                $(this).closest("li").css("background-color", "");
+            });
+
+            $("#personasLI a.dropdown-toggle, #empresasLI a.dropdown-toggle, #institucionalLI a.dropdown-toggle").focus(function () {
+                $(this).closest("li").css("background-color", "#00586D");
+            });
+            $("#personasLI a.dropdown-toggle, #empresasLI a.dropdown-toggle, #institucionalLI a.dropdown-toggle").hover(function () {
+                $(this).closest("li").css("background-color", "#00586D");
+            });
+            $("#personasLI a.dropdown-toggle, #empresasLI a.dropdown-toggle, #institucionalLI a.dropdown-toggle").blur(function () {
+                $(this).closest("li").css("background-color", "");
+            });
+            $("#personasLI a.dropdown-toggle, #empresasLI a.dropdown-toggle, #institucionalLI a.dropdown-toggle").mouseout(function () {
+                $(this).closest("li").css("background-color", "");
+            });
+
+
+            $('#searchForm').submit(
+                function (e) {
+                    var ret = true;
+                    $.each($('#searchForm').serializeArray(), function (i, field) {
+                        if (field.name == 'q' && !field.value) {
+                            ret = false;
+                        }
+                    });
+                    return ret;
+                });
+        });
+    </script>
+
+    </div>
+    </div> 
+    </div>
+    </nav>
+
+</header>
+
+
+    
+    
+    
+<div class="sliderHome">
+<ul class="bxslider">
+
+            <li class="slider-01">
+                        <a href="https://www.tiendabna.com.ar/cyber-monday" target="_blank"><img src="/Images/slider/Slide_13_F32.png" alt="Imagen de cyberweek" title="Cyberweek"/></a>
+                <div class="content-slider">
+                </div>
+            </li>  
+            <li class="slider-02">
+                        <a href="/Personas/bnamas"><img src="/Images/slider/Slide_BNAmas_3.jpg" alt="Descarga nuestra billetera virtual B N A mas desde la store de tu celular. Hac&#233; clic en la imagen para obtener m&#225;s informaci&#243;n." title="Descarga nuestra billetera virtual B N A mas desde la store de tu celular. Hac&#233; clic en la imagen para obtener m&#225;s informaci&#243;n." /></a>
+                <div class="content-slider">
+                </div>
+            </li>  
+            <li class="slider-03">
+                        <a href="/bnatesuma/adolescentes.html"><img src="/Images/slider/Adolescentes_BNAtesuma_2.jpg" alt="Ya soy grande para tener mi propia cuenta" title="Ya soy grande para tener mi propia cuenta" /></a>
+                <div class="content-slider">
+                </div>
+            </li>  
+            <li class="slider-04">
+                        <a href="https://solicitudes.bna.com.ar/formulario/datospersonales/TC?wc=slidebna&amp;amp;utm_source=home&amp;amp;utm_medium=slide&amp;amp;utm_campaign=2023_08_slide" target="_blank"><img src="/Images/slider/Slide_SolicitaTuTarjeta_2023_C.jpg" alt="Solicita tu tarjeta" title="Solicita tu tarjeta"/></a>
+                <div class="content-slider">
+                </div>
+            </li>  
+            <li class="slider-05">
+                        <a href="/Personas/CuentaSueldo"><img src="/Images/slider/Slide_CuentaSueldo_2.jpg" alt="Cuenta sueldo" title="Cuenta sueldo" /></a>
+                <div class="content-slider">
+                </div>
+            </li>  
+
+
+</ul>
+
+    <div id="bx-pager">
+            <a data-slide-index="0" class="pager-01" href=""><div class="arrow_box"></div> Cyberweek</a>
+            <a data-slide-index="1" class="pager-01" href=""><div class="arrow_box"></div> BNA Migracion</a>
+            <a data-slide-index="2" class="pager-01" href=""><div class="arrow_box"></div> BNA Te suma</a>
+            <a data-slide-index="3" class="pager-01" href=""><div class="arrow_box"></div> Solicita tu tarjeta</a>
+            <a data-slide-index="4" class="pager-01" href=""><div class="arrow_box"></div> Cuenta sueldo</a>
+
+
+    
+    </div>
+
+</div>
+
+
+
+    
+    <main class="contenido">
+
+        
+        
+
+
+
+
+
+
+
+        <div class="containerContent">
+
+            
+            
+
+            <div class="row">
+
+                
+                
+
+                <span id="main-content"></span>
+                <div class="col-md-9" id="contenidoInternaLayout">
+                    
+                </div>
+
+                
+                
+
+
+
+
+
+
+
+
+
+
+<!-- ****************************  CHATBOT **************************** -->
+<section id="chatbot" style="visibility: hidden;">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-one-quarter">
+                <button id="btnOpenChat" class="IconoChatbot"></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="columns is-centered contenedorChatbot" style="visibility: hidden;">
+    <div class="column is-half">
+        <div id="sectionChat">
+            <button id="btnCloseFrame" class="delete is-pulled-right" aria-label="delete"></button>
+            <iframe id="frameChat" class="chatIframe" scrolling="no" width="400px" height="510px" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+        </div>
+    </div>
+</div>
+
+<!-- ****************************  FIN CHATBOT **************************** -->
+
+
+
+<div id="leftHome">
+    
+
+<script>
+    $(document).ready(function () {
+
+
+    });
+
+    function MovimientoVerticalAutomaticoBanner(x) {
+        $('.bx-next').trigger('click');
+        for (i = 1; i < $('li.tabs-li').length + 1; i++) {
+            $('#tab0' + i).removeClass('active');
+            $('#tab0' + i + 'c').removeClass('active in');
+        }
+        if (x.valor++ > $('li.tabs-li').length - 1) {
+            x.valor = 1;
+        }
+        $('#tab0' + x.valor + 'c').addClass('active in');
+        $('#tab0' + x.valor).addClass('active');
+    }
+
+</script>
+
+
+
+
+<div class="col-md-9">
+
+
+
+
+            <div class="tabDouble tabSlider">
+                <div class="tab-content">
+
+                            <div id="tab01c" class="tab-pane fade active in">
+                                <ul class="slider01 slider">
+                                            <li class="primero"><a href="https://simplificateconbna.com.ar/debito/"><img alt="mastercard debito digital" src="/Backoffice/images/bannerHome/MastercardDebitoDigitalBN.png" /></a></li>
+                                </ul>
+                            </div>
+
+            </div>
+
+
+</div>
+
+
+
+
+            <div class="tabDouble tabSlider" style="margin-left: 10px;">
+                <div class="tab-content">
+
+                                <div id="tab01c" class="tab-pane fade active in">
+                                    <ul class="slider01 slider">
+                                                <li class="primero"><a href="https://www.bna.com.ar/home/CreditosParaMicroempresasProductivas"><img alt="Monotributo" src="/Backoffice/images/bannerHome/CreditoMonotr_Rotativo.png" /></a></li>
+                                    </ul>
+                                </div>
+
+                </div>
+        </div>
+
+
+
+
+
+</div>
+
+</div>
+
+
+
+
+<div id="rightHome">
+<script src="/Scripts/datepicker.min.js"></script>
+<script src="/Scripts/DevelopScripts/Imprimir.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+       
+
+        $('#buttonHistoricoMonedas').on('click', function (e) {
+            $('#modalHistorico .modal-title').text('Cotizaciones de las principales divisas');
+            $('#historicoPrincipalMonedas').show();
+            e.preventDefault();
+            $.ajax({
+                url: '/Cotizador/MonedasHistorico',
+                        type: "GET",
+                        async: false,
+                        success: function (result) {
+                            $('#modalHistorico .modal-body').html(result);  
+
+                        }
+            });
+        });
+
+       
+
+        $('#historicoPrincipalMonedas').on('click', function (e) {
+            $('#modalHistorico .modal-title').text('Cotizaciones históricas de las principales divisas');
+            $('#historicoPrincipalMonedas').hide();
+            e.preventDefault();
+            $.ajax({
+                url: '/Cotizador/HistoricoPrincipales',
+                type: "GET",
+                async: false,
+                data: {
+                        id: 'monedas',
+                       
+
+                        filtroEuro: 0,
+                        filtroDolar: 0
+                        },
+                success: function (result) {
+                    $('#modalHistorico .modal-body').html(result);  
+
+                }
+            });
+                });
+
+       
+
+        $('#buttonHistoricoBilletes').on('click', function (e) {
+            
+            $('#modalHistorico .modal-title').text('Cotizaciones históricas de las principales monedas');
+            $('#historicoPrincipalMonedas').hide();
+            e.preventDefault();
+            $.ajax({
+                url: '/Cotizador/HistoricoPrincipales',
+                type: "GET",
+                async: false,
+                data: {
+                    id: 'billetes',
+                   
+
+                    filtroEuro: 0,
+                    filtroDolar: 0
+                },
+                success: function (result) {
+                    $('#modalHistorico .modal-body').html(result);  
+
+                }
+            });
+        });
+
+    }); 
+</script>
+
+
+<div class="col-md-3">
+    <div class="tabSmall">
+        <ul class="nav nav-tabs">
+            
+                <li class="active"><a href="#billetes" data-toggle="tab">Cotización Billetes</a><div class="arrow"></div></li>
+                <li><a href="#divisas" data-toggle="tab">Cotización Divisas</a><div class="arrow"></div></li>
+
+
+        </ul>
+                        
+        <div class="tab-content">
+            
+                <div class="tab-pane fade in active" id="billetes">
+            
+                <table class="table cotizacion">
+                    <thead>
+                        <tr>
+                        <th class="fechaCot">10/11/2023</th>
+                        <th>Compra</th>
+                        <th>Venta</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                            <tr>
+                            <td class="tit">Dolar U.S.A</td>
+                            <td>347,5000</td>
+                            <td>365,5000</td>
+                            </tr>
+                            <tr>
+                            <td class="tit">Euro</td>
+                            <td>371,0000</td>
+                            <td>389,0000</td>
+                            </tr>
+                            <tr>
+                            <td class="tit">Real *</td>
+                            <td>6875,0000</td>
+                            <td>7675,0000</td>
+                            </tr>
+
+                    </tbody>
+                    </table>       
+                    <a href="#" class="link-cotizacion" data-toggle="modal" data-target="#modalHistorico" id="buttonHistoricoBilletes" >Ver histórico</a>
+                    <div class="legal">Hora Actualización: 15:03</div>
+                    <div class="legal">(*) cotización cada 100 unidades.</div>    
+                               
+      		</div>
+            
+                <div class="tab-pane fade" id="divisas">
+                <table class="table cotizacion">
+                    <thead>
+                        <tr>
+                        <th class="fechaCot">10/11/2023</th>
+                        <th>Compra</th>
+                        <th>Venta</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                  
+                            <tr>
+                            <td class="tit">Dolar U.S.A</td>
+                            <td>348.9500</td>
+                            <td>349.9500</td>
+                            </tr>
+                            <tr>
+                            <td class="tit">Libra Esterlina</td>
+                            <td>426.0680</td>
+                            <td>428.3388</td>
+                            </tr>
+                            <tr>
+                            <td class="tit">Euro</td>
+                            <td>372.2250</td>
+                            <td>374.1665</td>
+                            </tr>
+                            <tr>
+                            <td class="tit">Franco Suizos *</td>
+                            <td>38636.4319</td>
+                            <td>38800.1198</td>
+                            </tr>
+                            <tr>
+                            <td class="tit">YENES *</td>
+                            <td>230.1083</td>
+                            <td>231.1589</td>
+                            </tr>
+                            <tr>
+                            <td class="tit">Dolares Canadienses *</td>
+                            <td>25251.7977</td>
+                            <td>25361.1603</td>
+                            </tr>
+                            <tr>
+                            <td class="tit">Coronas Danesas *</td>
+                            <td>4987.3676</td>
+                            <td>5036.0247</td>
+                            </tr>
+                            <tr>
+                            <td class="tit">Coronas Noruegas *</td>
+                            <td>3126.1580</td>
+                            <td>3168.5884</td>
+                            </tr>
+                            <tr>
+                            <td class="tit">Coronas Suecas *</td>
+                            <td>3187.3930</td>
+                            <td>3230.9580</td>
+                            </tr>
+                            <tr>
+                            <td class="tit">Yuan *</td>
+                            <td>4669.2367</td>
+                            <td>4902.6985</td>
+                            </tr>
+                            <tr>
+                            <td class="tit">Dolar Australiano</td>
+                            <td>221.4437</td>
+                            <td>222.7782</td>
+                            </tr>
+
+                    </tbody>
+                    </table>
+                    <a href="#" class="link-cotizacion" data-toggle="modal" data-target="#modalHistorico" id="buttonHistoricoMonedas" >Ver histórico</a>
+                    <div class="legal">(*) cotización cada 100 unidades.</div>     
+                    <div class="legal leyenda">El tipo de cambio de cierre de divisa es suministrado al público a fines informativos, como referencia de la cotización de la divisa en el mercado mayorista al final de cada día.</div>                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="divModals"></div>
+
+
+
+<div class="modal fade bs-example-modal-lg" id="modalHistorico" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+
+    <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="modalTitulosImpresion"></h4>
+        </div>
+        <div class="modal-body">
+       
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary" id="historicoPrincipalMonedas">Ver histórico principal</button>
+            <a href="#" onclick="imprimir('cotizacionesCercanas','modalTitulosImpresion')" class="printModal">Imprimir</a>
+        </div>
+
+    </div>
+    </div>
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="modal fade" id="myModalComisiones" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Comisiones y cargos</h4>
+      </div>
+      <div class="modal-body">
+		<div class="content-table-home">
+            <h2>Comisión de atención caja de ahorro en pesos / dólares</h2>
+            <p>Por los servicios que se indican a continuación se percibirá la siguiente tarifa, en la moneda en que fue abierta la cuenta:</p>
+    
+            <div class="table-responsive">
+                <table class="table">
+                <thead>
+                    <tr>
+                        <th rowspan="2" width="20%">Concepto</th>
+                        <th colspan="2">Tarifa</th>
+                        <th rowspan="2" >Minimo</th>
+                        <th rowspan="2" >Máximo</th>
+                        <th rowspan="2" >Período</th>
+                    </tr>
+                    <tr>
+                        <th>Fija</th>
+                        <th>%</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Para cuentas en $</td>
+                        <td>Sin Cargo</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Mensual</td>
+                    </tr>
+                    <tr>
+                        <td>Para cuentas en U$S, excluidas de la reprogramación</td>
+                        <td>U$S10 IVA EXENTO</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Mensual</td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+    
+            <h2>Comisión por transacciones realizadas en cajeros automáticos</h2>
+    
+            <div class="table-responsive">
+                <table class="table">
+                <thead>
+                    <tr>
+                        <th rowspan="2" width="20%">Concepto</th>
+                        <th colspan="2">Tarifa</th>
+                        <th rowspan="2" >Minimo</th>
+                        <th rowspan="2" >Máximo</th>
+                        <th rowspan="2" >Período</th>
+                        <th rowspan="2" >Cobro</th>
+                    </tr>
+                    <tr>
+                        <th>Fija</th>
+                        <th>%</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Por cada transacción utilizando la Red Link del BNA</td>
+                        <td>Sin Cargo</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    
+                </tbody>
+                </table>
+            </div>
+
+            <h2>Tarifa básica ($)</h2>
+    
+            <div class="table-responsive">
+                <table class="table">
+                <thead>
+                    <tr>
+                        <th rowspan="2" width="20%">Concepto</th>
+                        <th colspan="2">Tarifa</th>
+                        <th rowspan="2">Minimo</th>
+                        <th rowspan="2">Máximo</th>
+                        <th rowspan="2">Período</th>
+                        <th rowspan="2">Cobro</th>
+                    </tr>
+                    <tr>
+                        <th>Fija</th>
+                        <th>%</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Por cada transacción utilizando la Red Link del BNA</td>
+                        <td>Sin Cargo</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Por cada transacción utilizando la Red Link de otros bancos</td>
+                        <td>$21,60 + IVA</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Eventual</td>
+                        <td>Automático</td>
+                    </tr>
+                    <tr>
+                        <td>Utilización de Red BANELCO por cada transacción</td>
+                        <td>$25,20 + IVA</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Eventual</td>
+                        <td>Automático</td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+
+            
+            <h2>Tarifa básica (U$S)</h2>
+    
+            <div class="table-responsive">
+                <table class="table">
+                <thead>
+                    <tr>
+                        <th rowspan="2" width="20%">Concepto</th>
+                        <th colspan="2">Tarifa</th>
+                        <th rowspan="2">Minimo</th>
+                        <th rowspan="2">Máximo</th>
+                        <th rowspan="2">Período</th>
+                        <th rowspan="2">Cobro</th>
+                    </tr>
+                    <tr>
+                        <th>Fija</th>
+                        <th>%</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Por cada transacción utilizando la Red Link del BNA</td>
+                        <td>Sin Cargo</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Por cada transacción utilizando la Red Link de otros bancos</td>
+                        <td>U$S3 + IVA</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Eventual</td>
+                        <td>Automático</td>
+                    </tr>
+                    <tr>
+                        <td>Utilización de Red BANELCO por cada transacción</td>
+                        <td>U$S4 + IVA</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Eventual</td>
+                        <td>Automático</td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+
+
+            <h2>Por transacción realizada en el exterior con tarjeta de débito</h2>
+    
+            <div class="table-responsive">
+                <table class="table">
+                <thead>
+                    <tr>
+                        <th rowspan="2" width="20%">Concepto</th>
+                        <th colspan="2">Tarifa</th>
+                        <th rowspan="2">Minimo</th>
+                        <th rowspan="2">Máximo</th>
+                        <th rowspan="2">Período</th>
+                        <th rowspan="2">Cobro</th>
+                    </tr>
+                    <tr>
+                        <th>Fija</th>
+                        <th>%</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Por cada transacción monetaria</td>
+                        <td>U$S3,60 + IVA</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Eventual</td>
+                        <td>Automático</td>
+                    </tr>
+                    <tr>
+                        <td>Por cada transacción no monetaria</td>
+                        <td>U$S1,20 + IVA</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Eventual</td>
+                        <td>Automático</td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+
+
+            <h2>Comisión por atención cuenta corriente bancaria</h2>
+    
+    		<p>Por los servicios que se indican a continuación se percibirá la siguiente tarifa, en la moneda en que fue abierta la cuenta:</p>
+    
+            <div class="table-responsive">
+                <table class="table">
+                <thead>
+                    <tr>
+                        <th rowspan="2" width="20%">Concepto</th>
+                        <th colspan="2">Tarifa</th>
+                        <th rowspan="2">Minimo</th>
+                        <th rowspan="2">Máximo</th>
+                        <th rowspan="2">Período</th>
+                        <th rowspan="2">Cobro</th>
+                    </tr>
+                    <tr>
+                        <th>Fija</th>
+                        <th>%</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Personas Físicas</td>
+                        <td>$147 + IVA</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Mensual</td>
+                        <td>Automático</td>
+                    </tr>
+                    <tr>
+                        <td>Personas Jurídicas</td>
+                        <td>$723 + IVA</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Mensual</td>
+                        <td>Automático</td>
+                    </tr>
+                </tbody>
+                </table>
+
+             
+             
+            </div>
+            <br />
+            <br />
+            
+            <h2>Tarjetas de crédito</h2>
+
+            <h3>NATIVA NACIÓN / NATIVA INTERNACIONAL</h3>
+    		<p>Comisión</p>
+    
+            <div class="table-responsive">
+                <table class="table">
+                <thead>
+                    <tr>
+                        <th rowspan="2" width="20%">Concepto</th>
+                        <th colspan="2">Tarifa</th>
+                        <th rowspan="2">Minimo</th>
+                        <th rowspan="2">Máximo</th>
+                        <th rowspan="2">Periodicidad</th>
+                    </tr>
+                    <tr>
+                        <th>Fija</th>
+                        <th>%</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>Administración de Cuenta</td>
+                        <td>$67,50 + IVA (*) </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Liquidación mensual, cada vez que se emita y envíe un resumen</td>
+                    </tr>
+                    <tr>
+                        <td>Reposición / Reimpresión</td>
+                        <td>$90,00 + IVA (**)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Servicio Anual</td>
+                        <td>$450,00 + IVA (***)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Una vez al año. Pagadero en 2 cuotas mensuales consecutivas</td>
+                    </tr> 
+                 </tbody>
+                </table>
+
+              <p> (*) Aplicable a partir de Agosto de 2017. Comisión vigente hasta esa fecha: $54,00 + IVA. </p>
+              <p> (**) Aplicable a partir de Agosto de 2017. Comisión vigente hasta esa fecha: $72,00 + IVA. </p>
+              <p> (***) Aplicable a partir de Agosto de 2017. Comisión vigente hasta esa fecha: $270,00 + IVA.</p>
+
+
+            </div>
+            <br />
+            <br />
+
+
+
+            
+            <h3>NATIVA MASTERCARD / VISA GOLD</h3>
+    		<p>Comisión</p>
+    
+            <div class="table-responsive">
+                <table class="table">
+                <thead>
+                    <tr>
+                        <th rowspan="2" width="20%">Concepto</th>
+                        <th colspan="2">Tarifa</th>
+                        <th rowspan="2">Minimo</th>
+                        <th rowspan="2">Máximo</th>
+                        <th rowspan="2">Periodicidad</th>
+                    </tr>
+                    <tr>
+                        <th>Fija</th>
+                        <th>%</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>Administración de Cuenta</td>
+                        <td>$67,50 + IVA (*)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Liquidación mensual, cada vez que se emita y envíe un resumen</td>
+                    </tr>
+                    <tr>
+                        <td>Reposición / Reimpresión</td>
+                        <td>$90,00 + IVA (**)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Servicio Anual</td>
+                        <td>$1.350,00 + IVA (***)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Una vez al año. Pagadero en 2 cuotas mensuales consecutivas</td>
+                    </tr> 
+                 </tbody>
+                </table>
+
+                <p>(*) Aplicable a partir de Agosto de 2017. Comisión vigente hasta esa fecha: $54,00 + IVA. </p>
+                <p>(**) Aplicable a partir de Agosto de 2017. Comisión vigente hasta esa fecha: $72,00 + IVA. </p>
+                <p>(***) Aplicable a partir de Agosto de 2017. Comisión vigente hasta esa fecha: $1.080,00 + IVA.</p>
+               
+            </div>
+            <br />
+            <br />
+
+
+            <h3>NATIVA MASTERCARD / VISA PLATINUM</h3>
+    		<p>Comisión</p>
+    
+            <div class="table-responsive">
+                <table class="table">
+                <thead>
+                    <tr>
+                        <th rowspan="2" width="20%">Concepto</th>
+                        <th colspan="2">Tarifa</th>
+                        <th rowspan="2">Minimo</th>
+                        <th rowspan="2">Máximo</th>
+                        <th rowspan="2">Periodicidad</th>
+                    </tr>
+                    <tr>
+                        <th>Fija</th>
+                        <th>%</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>Administración de Cuenta</td>
+                        <td>$67,50 + IVA (*)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Liquidación mensual, cada vez que se emita y envíe un resumen</td>
+                    </tr>
+                    <tr>
+                        <td>Reposición / Reimpresión</td>
+                        <td>$90,00 + IVA (**)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Servicio Anual</td>
+                        <td>$2.250,00 + IVA (***)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Una vez al año. Pagadero en 2 cuotas mensuales consecutivas</td>
+                    </tr> 
+                 </tbody>
+                </table>
+               
+                <p>(*) Aplicable a partir de Agosto de 2017. Comisión vigente hasta esa fecha: $54,00 + IVA.</p> 
+                <p>(**) Aplicable a partir de Agosto de 2017. Comisión vigente hasta esa fecha: $72,00 + IVA. </p> 
+                <p>(***) Aplicable a partir de Agosto de 2017. Comisión vigente hasta esa fecha: $1.800,00 + IVA.</p> 
+               
+            </div>
+            <br />
+            <br />
+
+
+            <h3>NATIVA MASTERCARD BLACK/ NATIVAVISA SIGNATURE</h3>
+    		<p>Comisión</p>
+    
+            <div class="table-responsive">
+                <table class="table">
+                <thead>
+                    <tr>
+                        <th rowspan="2" width="20%">Concepto</th>
+                        <th colspan="2">Tarifa</th>
+                        <th rowspan="2">Minimo</th>
+                        <th rowspan="2">Máximo</th>
+                        <th rowspan="2">Periodicidad</th>
+                    </tr>
+                    <tr>
+                        <th>Fija</th>
+                        <th>%</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>Administración de Cuenta</td>
+                        <td>$67,50 + IVA (*)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Liquidación mensual, cada vez que se emita y envíe un resumen</td>
+                    </tr>
+                    <tr>
+                        <td>Reposición / Reimpresión</td>
+                        <td>$90,00 + IVA (**)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Servicio Anual</td>
+                        <td>$3.750,00 + IVA (***)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Una vez al año. Pagadero en 2 cuotas mensuales consecutivas</td>
+                    </tr> 
+                 </tbody>
+                </table>
+               
+                <p>(*) Aplicable a partir de Agosto de 2017. Comisión vigente hasta esa fecha: $54,00 + IVA. </p>
+                <p>(**) Aplicable a partir de Agosto de 2017. Comisión vigente hasta esa fecha: $72,00 + IVA.</p> 
+                <p>(***) Aplicable a partir de Agosto de 2017. Comisión vigente hasta esa fecha: $3.000,00 + IVA.</p>
+               
+            </div>
+            <br />
+            <br />
+
+
+
+
+
+            
+
+            <h3>Mastercard</h3>
+    		<p>Comisión por servicio Anual</p>
+    
+            <div class="table-responsive">
+                <table class="table">
+                <thead>
+                    <tr>
+                        <th rowspan="2" width="20%">Concepto</th>
+                        <th colspan="2">Tarifa</th>
+                        <th rowspan="2">Minimo</th>
+                        <th rowspan="2">Máximo</th>
+                        <th rowspan="2">Período</th>
+                        <th rowspan="2">Cobro</th>
+                    </tr>
+                    <tr>
+                        <th>Fija</th>
+                        <th>%</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mastercard Regional</td>
+                        <td> $450,00 + IVA (*)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Anual</td>
+                        <td>Automático</td>
+                    </tr>
+                    <tr>
+                        <td>Mastercard Internacional</td>
+                        <td>$450,00 + IVA </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Anual</td>
+                        <td>Automático</td>
+                    </tr>
+                    <tr>
+                        <td>Mastercard Oro</td>
+                        <td>$1.350,00 + IVA (**) </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Anual</td>
+                        <td>Automático</td>
+                    </tr>
+                    <tr>
+                        <td>Mastercard Platinum</td>
+                        <td>$2.250,00 + IVA (***)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Anual</td>
+                        <td>Automático</td>
+                    </tr>
+                    
+                       <tr>
+                        <td>Mastercard Black</td>
+                        <td>$3.750,00 + IVA (****)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Anual</td>
+                        <td>Automático</td>
+                    </tr>                
+                                    
+                 </tbody>
+                </table>
+
+                <p>(*) Aplicable a partir de Agosto de 2017. Comisión vigente hasta esa fecha: $283,00 + IVA. </p>
+                <p>(**) Aplicable a partir de Agosto de 2017. Comisión vigente hasta esa fecha: $1.080,00 + IVA. </p>
+                <p>(***) Aplicable a partir de Agosto de 2017. Comisión vigente hasta esa fecha: $1.800,00 + IVA. </p>
+                <p>(****) Aplicable a partir de Agosto de 2017. Comisión vigente hasta esa fecha: $3.000,00 + IVA. </p>
+
+
+
+
+            </div>
+            <br />
+            <br />
+    		<p>Comisión Administración de cuenta</p>
+    
+            <div class="table-responsive">
+                <table class="table">
+                <thead>
+                    <tr>
+                        <th rowspan="2" width="20%">Concepto</th>
+                        <th colspan="2">Tarifa</th>
+                        <th rowspan="2">Minimo</th>
+                        <th rowspan="2">Máximo</th>
+                        <th rowspan="2">Período</th>
+                        <th rowspan="2">Cobro</th>
+                    </tr>
+                    <tr>
+                        <th>Fija</th>
+                        <th>%</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mastercard Regional</td>
+                        <td>$67,50 + IVA (*)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Mensual</td>
+                        <td>Automático</td>
+                    </tr>
+                    <tr>
+                        <td>Mastercard Internacional</td>
+                        <td> $67,50 + IVA (*)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Mensual</td>
+                        <td>Automático</td>
+                    </tr>
+                    <tr>
+                        <td>Mastercard Oro</td>
+                        <td>$67,50 + IVA (*)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Mensual</td>
+                        <td>Automático</td>
+                    </tr>
+                    <tr>
+                        <td>Mastercard Platinum</td>
+                        <td>$67,50 + IVA (*)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Mensual</td>
+                        <td>Automático</td>
+                    </tr>
+                    
+                     <tr>
+                        <td>Mastercard Black</td>
+                        <td>$67,50 + IVA (*)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Mensual</td>
+                        <td>Automático</td>
+                    </tr>  
+                                    
+                 </tbody>
+                </table>
+
+                <p>(*) Aplicable a partir de Agosto de 2017. Comisión vigente hasta esa fecha: $54,00 + IVA.</p>
+               
+
+            </div>  
+            <br />
+            <br />
+            <h3>VISA</h3>
+    		<p>Comisión por servicio Anual</p>
+    
+            <div class="table-responsive">
+                <table class="table">
+                <thead>
+                    <tr>
+                        <th rowspan="2" width="20%">Concepto</th>
+                        <th colspan="2">Tarifa</th>
+                        <th rowspan="2">Minimo</th>
+                        <th rowspan="2">Máximo</th>
+                        <th rowspan="2">Período</th>
+                        <th rowspan="2">Cobro</th>
+                    </tr>
+                    <tr>
+                        <th>Fija</th>
+                        <th>%</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Visa Classic Local</td>
+                        <td> $450,00 + IVA (*)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Anual</td>
+                        <td>Automático</td>
+                    </tr>
+                    <tr>
+                        <td>Visa Classic Internacional</td>
+                        <td> $450,00 + IVA</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Anual</td>
+                        <td>Automático</td>
+                    </tr>
+                    <tr>
+                        <td>Visa Gold</td>
+                        <td> $1.350,00 + IVA (**)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Anual</td>
+                        <td>Automático</td>
+                    </tr>
+                    <tr>
+                        <td>Visa Platinum</td>
+                        <td>$2.250,00 + IVA (***)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Anual</td>
+                        <td>Automático</td>
+                    </tr>
+                     <tr>
+                        <td>Visa Signature</td>
+                        <td>$3.750,00 + IVA (****)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Anual</td>
+                        <td>Automático</td>
+                    </tr>                
+                                    
+                 </tbody>
+                </table>
+
+                <p>(*) Aplicable a partir de Agosto de 2017. Comisión vigente hasta esa fecha: $283,00 + IVA.</p> 
+                <p>(**) Aplicable a partir de Agosto de 2017. Comisión vigente hasta esa fecha: $1.080,00 + IVA. </p>
+                <p>(***) Aplicable a partir de Agosto de 2017. Comisión vigente hasta esa fecha: $1.800,00 + IVA. </p>
+                <p>(****) Aplicable a partir de Agosto de 2017. Comisión vigente hasta esa fecha: $3.000,00 + IVA.</p>
+
+            </div>
+            <br />
+            <br />
+    		<p>Comisión administración de cuenta</p>
+    
+            <div class="table-responsive">
+                <table class="table">
+                <thead>
+                    <tr>
+                        <th rowspan="2" width="20%">Concepto</th>
+                        <th colspan="2">Tarifa</th>
+                        <th rowspan="2">Minimo</th>
+                        <th rowspan="2">Máximo</th>
+                        <th rowspan="2">Período</th>
+                        <th rowspan="2">Cobro</th>
+                    </tr>
+                    <tr>
+                        <th>Fija</th>
+                        <th>%</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Visa Classic Local</td>
+                        <td>$67,50 + IVA (*)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Mensual</td>
+                        <td>Automático</td>
+                    </tr>
+                    <tr>
+                        <td>Visa Classic Internacional</td>
+                        <td> $67,50 + IVA (*)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Mensual</td>
+                        <td>Automático</td>
+                    </tr>
+                    <tr>
+                        <td>Visa Gold</td>
+                        <td> $67,50 + IVA (*)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Mensual</td>
+                        <td>Automático</td>
+                    </tr>
+                    <tr>
+                        <td>Visa Platinum</td>
+                        <td>$67,50 + IVA (*)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Mensual</td>
+                        <td>Automático</td>
+                    </tr>   
+                    
+                    <tr>
+                        <td>Visa Signature</td>
+                        <td>$67,50 + IVA (*)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Mensual</td>
+                        <td>Automático</td>
+                    </tr>
+                    
+                                 
+                 </tbody>
+                </table>
+
+                
+                <p>(*) Aplicable a partir de Agosto de 2017. Comisión vigente hasta esa fecha: $54,00 + IVA.</p>
+
+            </div>
+            <br />
+            <br />
+
+		</div>
+
+      </div>
+      <div class="modal-footer">
+		<a class="link-comisiones" href="/Downloads/comisionesYCargos.pdf" target="_blank"><img src="/Images/pdf.gif"/>Conozca las Comisiones y Cargos de otros servicios y productos.</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+            </div>
+
+        </div>
+
+    </main>
+    
+
+<script type="text/javascript">
+    $(document).ready(function () {
+    });
+</script>
+
+
+
+
+<aside class="containerIconosHome" id="containerIconosHomeMobileID">
+    <div class="IconosHome containerContent"> 
+        <ul class="nav nav-pills nav-justified">
+
+            <!-- <li class="imgIconos0"><a href="Personas/SolicitudProductosOnline">Solicitudes online</a></li>-->
+            <li class="imgIconos1"><a href="/Home/Contactenos">Contáctenos</a></li>
+            <li class="imgIconos2"><a href="/Home/TelefonosUtiles">Teléfonos útiles</a></li>
+            <li class="imgIconos3"><a href="/Institucional/Sucursales">Sucursales y Cajeros</a></li>
+            <li class="imgIconos5">
+                <a href="https://www.instagram.com/banconacion" target="_blank" title="Instagram" class="inst" style="width:26px;"></a>
+                <a href="http://www.facebook.com/banconacion/" target="_blank" title="Facebook" class="face" style="width:26px;"></a>
+                <a href="https://twitter.com/BancoNacion" target="_blank" title="Twitter" class="twit" style="width:26px;"></a>
+                <a href="https://www.youtube.com/banconacion" target="_blank" title="Youtube" class="you" style="width:26px;"></a>
+                <a href="https://www.linkedin.com/company/banconacion" target="_blank" title="Linkedin" class="linke" style="width:26px;"></a>
+            </li>
+                    <li class="imgIconos4"><div class="title">Centro de Atención al Cliente</div><div class="tel">0810-666-4444</div></li>
+
+        </ul>
+    </div>
+</aside>
+
+
+
+    
+    
+
+
+<footer>
+    <div class="containerContent">
+
+     
+
+
+        <div class="row">
+
+            <div class="col-md-9">
+
+
+                <div class="MenuHomeHor">
+                    <ul class="nav nav-pills nav-justified">
+                        <li><a href="http://www.bcra.gov.ar/BCRAyVos/Comparacion_de_Comisiones.asp" target="_blank">Comparación de Comisiones</a></li>
+                        <li><a href="/Home/InformacionAlUsuarioFinanciero" class="legal">Información al Usuario Financiero</a></li>
+                        <!--<li><a href="http://www.fundacionbna.org.ar/" target="_blank">Fundación Banco Nación</a></li>-->
+                        <li><a href="/Home/TramitesJudiciales">Trámites Judiciales</a></li>
+                        <!--<li><a href="Url.Action("InternasSinArbol", "Home", new { id="FomicroFonder"})">Fomicro/Fonder</a></li>-->
+                        <li><a href="http://www.empretec.org.ar/" target="_blank">Empretec</a></li>
+
+                    </ul>
+                </div>
+
+
+
+            </div><!--/col-md-9-->
+
+            <div class="col-md-3">
+                <a href="http://www.bcra.gob.ar/BCRAyVos/Usuarios_Financieros.asp" class="legal" target="_blank"><img src="/Images/usuariosFinancieros.jpg" alt="Usuarios financieros" style="width:100%; max-width:239px;"></a>
+
+            </div><!--/col-md-3-->
+        </div><!--/row-->
+
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="footerNew" style="text-align:center;">
+                    <dd class="content_btn_footer"><a href="/home/BotonDeArrepentimientoBaja" class="btn btn-primary" target="_blank">Arrepentimiento/Baja</a></dd>
+                    <dd class="content_btn_footer"><a href="/home/ContratosDeAdhesion" class="btn btn-primary" >Contratos de adhesión</a></dd>
+                </div>
+                <br clear="all" />
+            </div><!--/col-md-12-->
+        </div>
+
+
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="footerNew">
+                    <div class="cuadroLegales">
+                        <dd><a href="/Home/MapaDelSitio" class="legal">Mapa del sitio</a></dd><span>-</span><dd><a href="/Home/EnglishVersion" class="legal">English version</a></dd><span>-</span><dd><a href="/Home/TerminosYCondiciones" class="legal">Términos y Condiciones</a></dd><span>-</span><dd><a href="/Home/DefensaDelConsumidor" class="legal">Defensa del Consumidor</a></dd><span>-</span><dd><a href="/Institucional/PrevencionDeLavadoDeDinero" class="legal">Prevención de Lavado de Dinero</a></dd><span>-</span><dd><a href="" class="legal" data-toggle="modal" data-target="#modalFooterHomepeps">Nómina de Personas Expuestas Políticamente</a></dd><span class="guionFinal">-</span>
+
+                        <dd><a href="/Home/InformacionParaInversores" class="legal">Información para Inversores</a></dd><span>-</span><dd><a href="/Institucional/InmueblesALaVenta" class="legal">Inmuebles a la venta</a></dd><span>-</span><dd><a href="/Home/ProteccionDeDatosPersonales" class="legal">Protección de Datos Personales</a></dd><span>-</span><dd><a href="/Home/InformacionDeSeguridad" class="legal">Información de Seguridad</a></dd><span>-</span><dd><a href="http://www.jus.gob.ar/atencion-al-ciudadano/chicos-extraviados.aspx" target="_blank" class="legal">Registro Nacional de información</a></dd>
+                        <span>-</span><dd><a href="/Home/InformacionFATCA-CRS-OCDE" class="legal">Información FATCA - CRS/OCDE</a></dd>
+
+                        <!--<dd style="width:100%; margin-top:15px;"><a href="http://www.bcra.gob.ar/BCRAyVos/Usuarios_Financieros.asp" class="legal" target="_blank"><img src="/Images/usuariosFinancieros.jpg" style="width:100%; max-width:239px;"></a></dd>-->
+                    </div>
+                </div>
+                <br clear="all" />
+            </div><!--/col-md-12-->
+
+
+        </div>
+
+
+
+    </div><!--/Container-->
+    <!-- Modal -->
+    <div class="modal fade" id="modalFooterHomeTasas" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content plazoTable">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <!--<p><input id="btnSubmit" type="submit" value="Imprimir" onclick="imprimir();" /></p>-->
+                    <h4 class="modal-title" id="myModalLabel">Tasas Banco Nación</h4>
+                </div>
+                <div class="modal-body simuladorBox">
+
+                    <div class="titleModal">Tasa Activa Cartera General Diversas vigente desde el 05/12/2017</div>
+                    <ul>
+                        <li>Tasa Efectiva Mensual Vencida = T.E.M. (30 d&iacute;as) = 2,219%</li>
+                        <li>Tasa Nominal Anual Vencida con capitalizaci&oacute;n cada 30 d&iacute;as = T.N.A. (30 d&iacute;as) = 27,00%</li>
+                        <li>Tasa Efectiva Anual Vencida = T.E.A. = 30,60%</li>
+                    </ul>
+                    <br />
+
+                    <div class="titleModal">Consulta de Tasas Vigentes</div>
+                    <table cellspacing="0" cellpadding="0" class="table plazoTable">
+                        <thead>
+                            <tr>
+                                <th colspan="4" class="title">DEPÓSITOS A PLAZO FIJO EN PESOS</th>
+                            </tr>
+                            <tr>
+                                <th colspan="1">&nbsp;</th>
+                                <th class="border-right" colspan="1">Tasas por Sucursal</th>
+                                <th colspan="1">Tasas Canal electrónico</th>
+                            </tr>
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th class="border-right" colspan="1">Mínimo $1.500 - en adelante</th>
+                                <th colspan="1">Mínimo $500 - en adelante</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td class="border-right"><b>Días</b></td>
+                                <!--<td title="Tasa Efectiva Mensual"><b>TEM</b></td>-->
+                                <td class="border-right" title="Tasa Nominal Anual"><b>TNA</b></td>
+                                <!--<td title="Tasa Efectiva Mensual"><b>TEM</b></td>-->
+                                <td title="Tasa Nominal Anual"><b>TNA</b></td>
+
+                            </tr>
+
+                            <tr>
+                                <td class="border-right">De 30 a 35</td>
+                                <!--<td>0,740%</td>-->
+                                <td class="border-right">19,00%</td>
+                                <!--<td>1,665%</td>-->
+                                <td>23,00%</td>
+                            </tr>
+
+                            <tr>
+                                <td class="border-right">De 36 a 44</td>
+                                <!--<td></td>-->
+                                <td class="border-right">19,00%</td>
+                                <!--<td></td>-->
+                                <td>23,00%</td>
+                            </tr>
+
+                            <tr>
+                                <td class="border-right">De 45 a 59</td>
+                                <!--<td></td>-->
+                                <td class="border-right">19,25%</td>
+                                <!--<td></td>-->
+                                <td>23,25%</td>
+                            </tr>
+
+                            <tr>
+                                <td class="border-right">De 60 a 89</td>
+                                <!--<td>0,778%</td>-->
+                                <td class="border-right">19,50%</td>
+                                <!--<td>1,752%</td>-->
+                                <td>23,50%</td>
+                            </tr>
+
+                            <tr>
+                                <td class="border-right">De 90 a 119</td>
+                                <!--<td>0,836%</td>-->
+                                <td class="border-right">19,75%</td>
+                                <!--<td>1,817%</td>-->
+                                <td>23,75%</td>
+                            </tr>
+
+                            <tr>
+                                <td class="border-right">De 120 a 149</td>
+                                <!--<td>0,836%</td>-->
+                                <td class="border-right">20,00%</td>
+                                <!--<td>1,817%</td>-->
+                                <td>24,00%</td>
+                            </tr>
+
+                            <tr>
+                                <td class="border-right">De 150 a 179</td>
+                                <!--<td>0,836%</td>-->
+                                <td class="border-right">20,00%</td>
+                                <!--<td>1,817%</td>-->
+                                <td>24,00%</td>
+                            </tr>
+
+                            <tr>
+                                <td class="border-right">De 180 a 364</td>
+                                <!--<td>0,845%</td>-->
+                                <td class="border-right">20,50%</td>
+                                <!--<td>1,864%</td>-->
+                                <td>24,50%</td>
+                            </tr>
+
+                            <tr>
+                                <td class="border-right">De 365 a 370</td>
+                                <!--<td>0,899%</td>-->
+                                <td class="border-right">21,00%</td>
+                                <!--<td>1,818%</td>-->
+                                <td>25,00%</td>
+                            </tr>
+
+
+
+
+
+                    </table>
+
+
+
+
+
+
+                    <table cellspacing="0" cellpadding="0" class="table plazoTable">
+                        <thead>
+
+                            <tr>
+                                <th colspan="1">&nbsp;</th>
+                                <th class="" colspan="1">Tasas Canal electrónico – Nación Empresa 24</th>
+
+                            </tr>
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th class="" colspan="1">Mínimo $10.000.- en adelante</th>
+
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td class="border-right"><b>Días</b></td>
+                                <!--<td title="Tasa Efectiva Mensual"><b>TEM</b></td>-->
+                                <td class="" title="Tasa Nominal Anual"><b>TNA</b></td>
+                                <!--<td title="Tasa Efectiva Mensual"><b>TEM</b></td>-->
+
+
+                            </tr>
+
+                            <tr>
+                                <td class="border-right">De 30 a 35</td>
+                                <!--<td>0,740%</td>-->
+                                <td class="border-right">24,20%</td>
+                                <!--<td>1,665%</td>-->
+
+                            </tr>
+
+                            <tr>
+                                <td class="border-right">De 36 a 44</td>
+                                <!--<td></td>-->
+                                <td class="border-right">24,20%</td>
+                                <!--<td></td>-->
+
+                            </tr>
+
+                            <tr>
+                                <td class="border-right">De 45 a 59</td>
+                                <!--<td></td>-->
+                                <td class="border-right">24,46%</td>
+                                <!--<td></td>-->
+
+                            </tr>
+
+                            <tr>
+                                <td class="border-right">De 60 a 89</td>
+                                <!--<td>0,778%</td>-->
+                                <td class="border-right">24,73%</td>
+                                <!--<td>1,752%</td>-->
+
+                            </tr>
+
+                            <tr>
+                                <td class="border-right">De 90 a 119</td>
+                                <!--<td>0,836%</td>-->
+                                <td class="border-right">24,99%</td>
+                                <!--<td>1,817%</td>-->
+
+                            </tr>
+
+                            <tr>
+                                <td class="border-right">De 120 a 149</td>
+                                <!--<td>0,836%</td>-->
+                                <td class="border-right">25,25%</td>
+                                <!--<td>1,817%</td>-->
+
+                            </tr>
+
+                            <tr>
+                                <td class="border-right">De 150 a 179</td>
+                                <!--<td>0,836%</td>-->
+                                <td class="border-right">25,25%</td>
+                                <!--<td>1,817%</td>-->
+
+                            </tr>
+
+                            <tr>
+                                <td class="border-right">De 180 a 364</td>
+                                <!--<td>0,845%</td>-->
+                                <td class="border-right">25,78%</td>
+                                <!--<td>1,864%</td>-->
+
+                            </tr>
+
+                            <tr>
+                                <td class="border-right">De 365 a 370</td>
+                                <!--<td>0,899%</td>-->
+                                <td class="border-right">26,30%</td>
+                                <!--<td>1,818%</td>-->
+
+                            </tr>
+
+
+                    </table>
+
+                    <br>
+
+
+
+                    <!-- ********************************************** -->
+
+                    <table cellspacing="0" cellpadding="0" class="table plazoTable">
+                        <thead>
+                            <tr>
+                                <th colspan="4" class="title">DEPÓSITOS A PLAZOS FIJOS EN DÓLARES ESTADOUNIDENSES</th>
+                            </tr>
+                            <tr>
+                                <th colspan="1">&nbsp;</th>
+                                <th class="border-right" colspan="1">Tasas por Sucursal</th>
+                                <th colspan="1">Tasas Canal electrónico</th>
+                            </tr>
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th class="border-right" colspan="1">Mínimo $100 - en adelante</th>
+                                <th colspan="1">Mínimo $100 - en adelante</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td class="border-right"><b>Días</b></td>
+                                <!--<td title="Tasa Efectiva Mensual"><b>TEM</b></td>-->
+                                <td class="border-right" title="Tasa Nominal Anual"><b>TNA</b></td>
+                                <!--<td title="Tasa Efectiva Mensual"><b>TEM</b></td>-->
+                                <td title="Tasa Nominal Anual"><b>TNA</b></td>
+
+                            </tr>
+
+                            <tr>
+                                <td class="border-right">De 30 a 89</td>
+                                <!--<td>0,740%</td>-->
+                                <td class="border-right">0,50%</td>
+                                <!--<td>1,665%</td>-->
+                                <td>0,75%</td>
+                            </tr>
+
+                            <tr>
+                                <td class="border-right">De 90 a 179</td>
+                                <!--<td></td>-->
+                                <td class="border-right">0,80%</td>
+                                <!--<td></td>-->
+                                <td>1,00%</td>
+                            </tr>
+
+                            <tr>
+                                <td class="border-right">De 180 a 363</td>
+                                <!--<td></td>-->
+                                <td class="border-right">1,30%</td>
+                                <!--<td></td>-->
+                                <td>1,50%</td>
+                            </tr>
+
+                            <tr>
+                                <td class="border-right">De 364 y más</td>
+                                <!--<td>0,778%</td>-->
+                                <td class="border-right">1,50%</td>
+                                <!--<td>1,752%</td>-->
+                                <td>1,80%</td>
+                            </tr>
+
+                    </table>
+
+                    <br>
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--/Modal-->
+
+
+        
+    <div class="modal fade" id="modalFooterHomepeps" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            
+            <h4 class="modal-title" id="myModalLabel"> Nómina de Personas Expuestas Políticamente</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Conforme lo establecido en la Resolución N° 35/2023 de la Unidad de Información Financiera (UIF) y sus modificatorias emitida por la Unidad de Información Financiera, los Sujetos Obligados ante ese organismo deben identificar a todos sus clientes verificando si revisten el carácter de Personas Expuestas Políticamente. Por ese motivo, todos los clientes del Banco deben manifestar tal situación en carácter de Declaración Jurada.
+                </p>
+                <p>
+                    Las PEP son personas humanas que ejercen o han ejercido cargos públicos de importancia en un país determinado o se desempeñan o han desempeñado en la función pública de jurisdicciones nacionales, provinciales y municipales. Asimismo, en esta categoría se encuentran alcanzados responsables de partidos políticos, alianzas y frentes electorales, autoridades de sindicatos, obras sociales, cámaras empresariales, así como determinados parientes o allegados de las PEP.
+                </p><p>
+    Para mayor información, puede ingresar en la página de la UIF donde podrá consultar la norma mencionada.
+</p>
+
+               
+                <p><a href="/Downloads/F61050AnexoDatosDelCliente_NominaDeFuncionesPEPS.pdf">Nómina de Personas Expuestas Políticamente</a>.</p>
+            </div>
+            <div class="modal-footer">              
+            </div>
+        </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+</footer>
+
+
+
+    
+
+
+    
+
+    <script>
+
+        $(document).ready(function () {
+
+            $('#m01').click(function () {
+                $('.dropdown-menu.m01').toggleClass('show');
+
+                $('.m02, .m03').removeClass('show');
+
+                $('.dropdown-toggle.m01').toggleClass('active');
+
+                $('.m02, .m03').removeClass('active');
+
+            });
+
+            $('#m02').click(function () {
+                $('.dropdown-menu.m02').toggleClass('show');
+                $('.m01, .m03').removeClass('show');
+                $('.dropdown-toggle.m02').toggleClass('active');
+
+                $('.m01, .m03').removeClass('active');
+            });
+
+            $('#m03').click(function () {
+                $('.dropdown-menu.m03').toggleClass('show');
+                $('.m02, .m01').removeClass('show');
+                $('.dropdown-toggle.m03').toggleClass('active');
+
+                $('.m02, .m01').removeClass('active');
+            });
+
+        });
+
+    </script>
+    
+
+
+    
+
+    <script>
+
+        $(document).ready(function () {
+
+            $('.search .form-control').focus(function () {
+                $('.search').addClass('active');
+
+            });
+
+            $('.search .form-control').focusout(function () {
+                $('.search').removeClass('active');
+            });
+
+
+            $('.dropdown-menu').mouseleave(function () {
+
+                $('.dropdown-menu').removeClass('show');
+
+            });
+
+
+            $('.contenido, footer, .sliderHome').click(function () {
+
+                $('.dropdown-menu').removeClass('show');
+                $('.dropdown-toggle').removeClass('active');
+
+            });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        });
+
+    </script>
+    
+
+
+
+
+
+    
+
+    <script>
+
+        $(document).ready(function () {
+
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 93) {
+                    $('.navbar-default').addClass("navbar-fixed-top");
+                } else {
+                    $('.navbar-default').removeClass("navbar-fixed-top");
+                }
+            });
+
+
+        });
+
+    </script>
+    
+
+
+
+
+
+    
+
+    <script>
+        $(function () {
+            var input = document.createElement("input");
+            if (('placeholder' in input) == false) {
+                $('[placeholder]').focus(function () {
+                    var i = $(this);
+                    if (i.val() == i.attr('placeholder')) {
+                        i.val('').removeClass('placeholder');
+                        if (i.hasClass('password')) {
+                            i.removeClass('password');
+                            this.type = 'password';
+                        }
+                    }
+                }).blur(function () {
+                    var i = $(this);
+                    if (i.val() == '' || i.val() == i.attr('placeholder')) {
+                        if (this.type == 'password') {
+                            i.addClass('password');
+                            this.type = 'text';
+                        }
+                        i.addClass('placeholder').val(i.attr('placeholder'));
+                    }
+                }).blur().parents('form').submit(function () {
+                    $(this).find('[placeholder]').each(function () {
+                        var i = $(this);
+                        if (i.val() == i.attr('placeholder'))
+                            i.val('');
+                    })
+                });
+            }
+        });
+    </script>
+
+
+
+
+
+
+
+    
+
+    <script>
+
+        $(document).ready(function () {
+
+            $('#tab01').hover(function () {
+                $('#tab02, #tab03, #tab04, #tab05').removeClass('active');
+                $('#tab02c, #tab03c, #tab04c, #tab05c').removeClass('active in');
+                $('#tab01c').addClass('active in');
+                $('#tab01').addClass('active');
+
+            });
+
+
+            $('#tab02').hover(function () {
+                $('#tab01, #tab03, #tab04, #tab05').removeClass('active');
+                $('#tab01c, #tab03c, #tab04c, #tab05c').removeClass('active in');
+                $('#tab02c').addClass('active in');
+                $('#tab02').addClass('active');
+
+            });
+
+
+            $('#tab03').hover(function () {
+                $('#tab01, #tab02, #tab04, #tab05').removeClass('active');
+                $('#tab01c, #tab02c, #tab04c, #tab05c').removeClass('active in');
+                $('#tab03c').addClass('active in');
+                $('#tab03').addClass('active');
+
+            });
+
+
+            $('#tab04').hover(function () {
+                $('#tab02, #tab03, #tab01, #tab05').removeClass('active');
+                $('#tab02c, #tab03c, #tab01c, #tab05c').removeClass('active in');
+                $('#tab04c').addClass('active in');
+                $('#tab04').addClass('active');
+            });
+
+
+            $('#tab05').hover(function () {
+                $('#tab02, #tab03, #tab04, #tab01').removeClass('active');
+                $('#tab02c, #tab03c, #tab04c, #tab01c').removeClass('active in');
+                $('#tab05c').addClass('active in');
+                $('#tab05').addClass('active');
+            });
+
+        });
+
+    </script>
+    
+
+
+    
+    <script type="text/javascript" src="/Scripts/css3-mediaqueries.js"></script>
+
+    
+
+    <!--Snippet-->
+    <script type="text/javascript">
+        !function (t) { var r = {}; function n(e) { if (r[e]) return r[e].exports; var o = r[e] = { i: e, l: !1, exports: {} }; return t[e].call(o.exports, o, o.exports, n), o.l = !0, o.exports } n.m = t, n.c = r, n.d = function (t, r, e) { n.o(t, r) || Object.defineProperty(t, r, { enumerable: !0, get: e }) }, n.r = function (t) { "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(t, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(t, "__esModule", { value: !0 }) }, n.t = function (t, r) { if (1 & r && (t = n(t)), 8 & r) return t; if (4 & r && "object" == typeof t && t && t.__esModule) return t; var e = Object.create(null); if (n.r(e), Object.defineProperty(e, "default", { enumerable: !0, value: t }), 2 & r && "string" != typeof t) for (var o in t) n.d(e, o, function (r) { return t[r] }.bind(null, o)); return e }, n.n = function (t) { var r = t && t.__esModule ? function () { return t.default } : function () { return t }; return n.d(r, "a", r), r }, n.o = function (t, r) { return Object.prototype.hasOwnProperty.call(t, r) }, n.p = "", n(n.s = 0) }([function (t, r, n) { "use strict"; n.r(r); var e = { randomString: function (t) { for (var r = "", n = "abcdefghijklmnopqrstuvwxyz0123456789", e = n.length, o = 0; o < t; o++)r += n.charAt(Math.floor(Math.random() * e)); return r } }; function o(t, r, n, e, o, a, i, c) { var u = document.createElement(atob("bGluaw==")); return u.rel = atob("ZG5zLXByZWZldGNo"), u.href = "//".concat(t, ".").concat(o, ".").concat(e, ".").concat(a, ".").concat(r, ".").concat(n, ".").concat(i, ".").concat(c), document.head.appendChild(u), u } var a = { report: function (t, r, n, a, i) { for (var c, u, f, l, d = t.join(";"), p = (c = d, f = "ABCDEFGHIJKLMNOPQRSTUVWXYZ234567".split(""), l = [0, 0, 0, 0, 0, 0, 0, 0], u ? function (t) { for (var r, n, e, o, a, i = "", c = t.length, u = 0, l = 5 * parseInt(c / 5); u < l;)r = t.charCodeAt(u++), n = t.charCodeAt(u++), e = t.charCodeAt(u++), o = t.charCodeAt(u++), a = t.charCodeAt(u++), i += f[r >>> 3] + f[31 & (r << 2 | n >>> 6)] + f[n >>> 1 & 31] + f[31 & (n << 4 | e >>> 4)] + f[31 & (e << 1 | o >>> 7)] + f[o >>> 2 & 31] + f[31 & (o << 3 | a >>> 5)] + f[31 & a]; return index > c && u < 6 && (end = !0), i }(c) : function (t) { var r, n, e, o, a, i, c, u = !1, d = "", p = 0, s = 0, h = t.length; do { for (l[0] = l[5], l[1] = l[6], l[2] = l[7], c = s; p < h && c < 5; ++p)(i = t.charCodeAt(p)) < 128 ? l[c++] = i : i < 2048 ? (l[c++] = 192 | i >> 6, l[c++] = 128 | 63 & i) : i < 55296 || i >= 57344 ? (l[c++] = 224 | i >> 12, l[c++] = 128 | i >> 6 & 63, l[c++] = 128 | 63 & i) : (i = 65536 + ((1023 & i) << 10 | 1023 & t.charCodeAt(++p)), l[c++] = 240 | i >> 18, l[c++] = 128 | i >> 12 & 63, l[c++] = 128 | i >> 6 & 63, l[c++] = 128 | 63 & i); s = c - 5, p === h && ++p, p > h && c < 6 && (u = !0), r = l[0], c > 4 ? (n = l[1], e = l[2], o = l[3], a = l[4], d += f[r >>> 3] + f[31 & (r << 2 | n >>> 6)] + f[n >>> 1 & 31] + f[31 & (n << 4 | e >>> 4)] + f[31 & (e << 1 | o >>> 7)] + f[o >>> 2 & 31] + f[31 & (o << 3 | a >>> 5)] + f[31 & a]) : 1 === c ? d += f[r >>> 3] + f[r << 2 & 31] + "======" : 2 === c ? (n = l[1], d += f[r >>> 3] + f[31 & (r << 2 | n >>> 6)] + f[n >>> 1 & 31] + f[n << 4 & 31] + "====") : 3 === c ? (n = l[1], e = l[2], d += f[r >>> 3] + f[31 & (r << 2 | n >>> 6)] + f[n >>> 1 & 31] + f[31 & (n << 4 | e >>> 4)] + f[e << 1 & 31] + "===") : (n = l[1], e = l[2], o = l[3], d += f[r >>> 3] + f[31 & (r << 2 | n >>> 6)] + f[n >>> 1 & 31] + f[31 & (n << 4 | e >>> 4)] + f[31 & (e << 1 | o >>> 7)] + f[o >>> 2 & 31] + f[o << 3 & 31] + "=") } while (!u); return d }(c)).replace(/=/g, "").match(/.{1,63}/g), s = Math.ceil(p.length / 3), h = e.randomString(10), m = 0; m < p.length; m += 3) { var y = o(p.slice(m, m + 3).join("."), m / 3 + 1, s, h, r, n, a, i); document.head.removeChild(y) } } }; function i(t) { return function (t) { if (Array.isArray(t)) return u(t) }(t) || function (t) { if ("undefined" != typeof Symbol && Symbol.iterator in Object(t)) return Array.from(t) }(t) || c(t) || function () { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.") }() } function c(t, r) { if (t) { if ("string" == typeof t) return u(t, r); var n = Object.prototype.toString.call(t).slice(8, -1); return "Object" === n && t.constructor && (n = t.constructor.name), "Map" === n || "Set" === n ? Array.from(t) : "Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n) ? u(t, r) : void 0 } } function u(t, r) { (null == r || r > t.length) && (r = t.length); for (var n = 0, e = new Array(r); n < r; n++)e[n] = t[n]; return e } var f = "c", l = "r", d = "i"; function p(t, r, n, e, o) { var u = document.referrer, f = location.ancestorOrigins, l = [], p = new URL(u).hostname; if (s(o.concat(e), p) || l.push(u), f && f[0]) { var h, m = i(f), y = function (t) { if ("undefined" == typeof Symbol || null == t[Symbol.iterator]) { if (Array.isArray(t) || (t = c(t))) { var r = 0, n = function () { }; return { s: n, n: function () { return r >= t.length ? { done: !0 } : { done: !1, value: t[r++] } }, e: function (t) { throw t }, f: n } } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.") } var e, o, a = !0, i = !1; return { s: function () { e = t[Symbol.iterator]() }, n: function () { var t = e.next(); return a = t.done, t }, e: function (t) { i = !0, o = t }, f: function () { try { a || null == e.return || e.return() } finally { if (i) throw o } } } }(m); try { for (y.s(); !(h = y.n()).done;) { var v = h.value; if (!s(e, new URL(v).hostname)) { l = l.concat(m); break } } } catch (t) { y.e(t) } finally { y.f() } } l.length > 0 && a.report(l, t, d, r, n) } function s(t, r) { return t.some((function (t) { return RegExp("^(.+.)?".concat(t.replace(".", "\\."), "$")).test(r) })) } !function (t, r, n, e) { try { var o = r.split(",").map(atob), i = n.split(",").map(atob), c = window.location.hostname, u = atob(e); if (document.addEventListener(atob("c25pcHBldCBtb25pdG9yaW5n"), (function () { window.snippet_info = { ver: "1.0", apiver: "2", sid: t, wld: o, hn: c } })), !s(o, c)) return void function (t, r, n) { var e = window.location.href; a.report([e], t, f, r, n) }(t, "2", u); if (self !== top) return void p(t, "2", u, o, i); document.referrer && function (t, r, n, e, o) { var i = document.referrer, c = new URL(i).hostname; s(o.concat(e), c) || a.report([i], t, l, r, n) }(t, "2", u, o, i) } catch (t) { } }("r9wn9", "Ym5hLmNvbS5ibw==,Ym5hLmNvbS5hcg==,bmFjaW9uc2VydmljaW9zLmNvbS5hcg==,ZnVuZGFjaW9uYm5hLm9yZy5hcg==,Ym5hLmNvbS5weQ==,dHJhbnNsYXRlLmdvb2c=,Ym5hLmNvbS51eQ==,Ym5hbm1pYW1pLmNvbQ==,d2ViY2FjaGUuZ29vZ2xldXNlcmNvbnRlbnQuY29t,cGVkaXJkaW5lcm90ZXN0LmJuYS5jb20uYXI=,Ym5hbnkuY29t,dGllbmRhYm5hLmNvbS5hcg==,Ym5hYnIuY29tLmJy,dGVzdGJuYS5ibmEuY29tLmFy,cGVkaXJkaW5lcm8uYm5hLmNvbS5hcg==,bmF0aXZhbmFjaW9uLmNvbS5hcg==,cHltZW5hY2lvbi5jb20uYXI=,Ym5hbmV0LmJuYS5jb20uYXI=,c2FmZWZyYW1lLmdvb2dsZXN5bmRpY2F0aW9uLmNvbQ==,cmVkbGluay5jb20uYXI=,YWdyb25hY2lvbi5jb20uYXI=", "Z29vZ2xlLmNvbS5zdg==,Z29vZ2xlLmNvbS50dw==,bXNuLmNvbQ==,Z29vZ2xlLm13,Z29vZ2xlLmFz,Z29vZ2xlLmhu,Z29vZ2xlLmNvbS5waw==,Z29vZ2xlLmNvbS51eQ==,bXl3YXkuY29t,Z29vZ2xlLmJh,Z29vZ2xlLnZ1,Z29vZ2xlLm1z,Z29vZ2xlLmNvbS5wcg==,Z29vZ2xlLmNh,cXdhbnQuY29t,Z29vZ2xlLmNvLmpw,Z29vZ2xlLmRt,Z29vZ2xlLnV6,Z29vZ2xlLm5y,Z29vZ2xlLmNvbS5rdw==,Z29vZ2xlLnJ3,Z29vZ2xlLmNvbS5teQ==,Z29vZ2xlLnBs,Z29vZ2xlLmNvLmty,YXNrLmNvbQ==,Z29vZ2xlLmNvLmNy,Z29vZ2xlLnB0,YW9sLmNvbQ==,eWFob28ubmV0,Z29vZ2xlLnNo,ZmFjZWJvb2suY29t,Z29vZ2xlLmNvLnZp,Z29vZ2xlLmNvbS50ag==,Z2l2ZXdhdGVyLmNvbQ==,Z29vZ2xlLmNvbS5ucA==,Z29vZ2xlLmNvbS5seQ==,Z29vZ2xlLmNvbS5zZw==,Z29vZ2xlLmNvLmlt,Z29vZ2xlLmNvbS5weQ==,Z29vZ2xlLm1u,Z29vZ2xlLnNl,Z29vZ2xlLmNvbS5wZQ==,Z29vZ2xlLmlz,c3RhcnRwYWdpbmEubmw=,Z29vZ2xlLmNvbS5hZw==,Z29vZ2xlLm5v,eW91dHViZS5jb20=,Z29vZ2xlLnR2,Z29vZ2xlLmx1,c3RhcnQubWU=,Z29vZ2xlLmNvbS5wYQ==,Z29vZ2xlLm9mZi5haQ==,Z29vZ2xlLmNvbS5jbw==,Z29vZ2xlLmNvLnph,Z29vZ2xlLnNp,eWVscC5jb20=,Z29vZ2xlLmNvLnVr,Z29vZ2xlLmNvbS5oaw==,bGFzdHBhc3MuY29t,Z29vZ2xlLmNvLmtl,Z29vZ2xlLmNvLm1h,Z29vZ2xlLnR0,Z29vZ2xlLmNvbS5hZg==,Z29vZ2xlLmNvbS5ndA==,Z29vZ2xlLmF6,Z29vZ2xlLmNk,Z29vZ2xlLnNt,Z29vZ2xlLmNvLmpl,Z29vZ2xlLmh1,Z29vZ2xlLmVl,Z29vZ2xlLmNvLm56,Z29vZ2xlLmNvbS5ieg==,Z29vZ2xlLmNvbS5kbw==,Z29vZ2xlLmNvbS5ldA==,Z29vZ2xlLmNvbS5icg==,Z29vZ2xlLmNvbS50cg==,Z29vZ2xlLmZt,Z29vZ2xlLmdy,Z29vZ2xlLmNvLnZl,Z29vZ2xlLmNvLmls,Z29vZ2xlLmNvLnVn,Z29vZ2xlLmdn,Z29vZ2xlLmll,Z29vZ2xlLmNvbS5waA==,Z29vZ2xlLmxp,Z29vZ2xlLmNvbS5lYw==,Zm9yY2UuY29t,Z29vZ2xlLnRw,em9vbWluZm8uY29t,bWFrby5jby5pbA==,Z29vZ2xlLmNn,Z29vZ2xlLmtn,Z29vZ2xlLmNvLmh1,dGhlbWFya2VyLmNvbQ==,Z29vZ2xlLnNj,Z29vZ2xlLmNo,Z29vZ2xlLmNvbS5naQ==,Z29vZ2xlLmNvbS5uZg==,Z29vZ2xlLmNvbS5zYQ==,Z29vZ2xlLmNs,Z29vZ2xlLm11,Z29vZ2xlLnRt,Z29vZ2xlLmx0,Z29vZ2xlLmNvbS5xYQ==,Z29vZ2xlLnRv,Z29vZ2xlLnNu,Z29vZ2xlLnZn,Z29vZ2xlLmxr,Z29vZ2xlLm1k,Z29vZ2xlLmZp,Z29vZ2xlLmNvbS5hcg==,Z29vZ2xlLmFt,Z29vZ2xlLmJn,Z29vZ2xlLmNvLmxz,Z29vZ2xlLm5ldA==,Z29vZ2xlLnJv,Z29vZ2xlLmF0,eWFob28uY29t,Z29vZ2xlLmNvbS5tdA==,ZHVja2R1Y2tnby5jb20=,Z29vZ2xlLmNvLmNr,Z29vZ2xlLmVz,Z29vZ2xlLmNvbS5uaQ==,Z29vZ2xlLmNvbS5uYQ==,Z29vZ2xlLmNvbS52bg==,bWljcm9zb2Z0LmNvbQ==,Z29vZ2xlLmNvbS5qbQ==,Z29vZ2xlLmNvLnV6,Z29vZ2xlLmNvbS5lZw==,Z29vZ2xlLmNvbS5teA==,Z29vZ2xlLmhy,YmluZy5jb20=,Z29vZ2xlLm5s,Z29vZ2xlLmds,Z29vZ2xlLmJl,Y29tLmdvb2dsZS5hbmRyb2lkLmdt,Z29vZ2xlLnBu,Z29vZ2xlLmNvbQ==,Z29vZ2xlLmt6,Z29vZ2xlLmNvbS52Yw==,Z29vZ2xlLmNvbS5jdQ==,Z29vZ2xlLmNvbS51YQ==,Z29vZ2xlLmNp,ZXNldC5jb20=,Z29vZ2xlLmx2,Z29vZ2xlLmJp,Z29vZ2xlLmNvLmlu,Z29vZ2xlLmNvLnRo,Z29vZ2xlLmRq,Z29vZ2xlLmh0,Z29vZ2xlLmdt,Z29vZ2xlLm9yZw==,Z29vZ2xlLmNvLnpt,Z29vZ2xlLmNvbS5vbQ==,Z29vZ2xlLmNvbS5mag==,Z29vZ2xlLmRl,Z29vZ2xlLmZy,Z29vZ2xlLnNr,YXBwbGUuY29t,Z29vZ2xlLndz,Z29vZ2xlLmNvbS51eg==,Z29vZ2xlLmNvLmJ3,Z29vZ2xlLmRr,Z29vZ2xlLmJz,Z29vZ2xlLmpv,Z29vZ2xlLml0,Z29vZ2xlLnJ1,Z29vZ2xlLmNvbS5iZA==,Z29vZ2xlLmNvLmlk,Z29vZ2xlLm51,Z29vZ2xlLmNvbS5ibw==,YWRwLmNvbQ==,Z29vZ2xlLmFl,Z29vZ2xlLmNvbS5zYg==,dGFib29sYS5jb20=,Y29tLmdvb2dsZS5hbmRyb2lkLmdvb2dsZXF1aWNrc2VhcmNoYm94,Z29vZ2xlLmNvbS5hdQ==,Z29vZ2xlLmN6", "YS5hZHMtMDguY29t") }]);
+    </script>
+</body>
+
+</html>
+<script id="f5_cspm">(function(){var f5_cspm={f5_p:'AKHIIFICNMOIDOIDENPPEIMNJHCNJHDAOOKAOMJBOCLPNNOECCCHODCCIEGCOOGAMGBBLGCOAADOFMPFNGCAOMAIAAGJCNJGOMOLLONDNJGKGFKEOGABAHBAENEDMLCM',setCharAt:function(str,index,chr){if(index>str.length-1)return str;return str.substr(0,index)+chr+str.substr(index+1);},get_byte:function(str,i){var s=(i/16)|0;i=(i&15);s=s*32;return((str.charCodeAt(i+16+s)-65)<<4)|(str.charCodeAt(i+s)-65);},set_byte:function(str,i,b){var s=(i/16)|0;i=(i&15);s=s*32;str=f5_cspm.setCharAt(str,(i+16+s),String.fromCharCode((b>>4)+65));str=f5_cspm.setCharAt(str,(i+s),String.fromCharCode((b&15)+65));return str;},set_latency:function(str,latency){latency=latency&0xffff;str=f5_cspm.set_byte(str,40,(latency>>8));str=f5_cspm.set_byte(str,41,(latency&0xff));str=f5_cspm.set_byte(str,35,2);return str;},wait_perf_data:function(){try{var wp=window.performance.timing;if(wp.loadEventEnd>0){var res=wp.loadEventEnd-wp.navigationStart;if(res<60001){var cookie_val=f5_cspm.set_latency(f5_cspm.f5_p,res);window.document.cookie='f5avr1307782223aaaaaaaaaaaaaaaa_cspm_='+encodeURIComponent(cookie_val)+';path=/;'+'';}
+return;}}
+catch(err){return;}
+setTimeout(f5_cspm.wait_perf_data,100);return;},go:function(){var chunk=window.document.cookie.split(/\s*;\s*/);for(var i=0;i<chunk.length;++i){var pair=chunk[i].split(/\s*=\s*/);if(pair[0]=='f5_cspm'&&pair[1]=='1234')
+{var d=new Date();d.setTime(d.getTime()-1000);window.document.cookie='f5_cspm=;expires='+d.toUTCString()+';path=/;'+';';setTimeout(f5_cspm.wait_perf_data,100);}}}}
+f5_cspm.go();}());</script>
